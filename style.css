@@ -1,0 +1,104 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 900px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c06b;
+  cursor: pointer;
+}
+
+
+main {
+  position: relative;
+  height: 900px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.light {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 27.2rem;
+  left: 41.66rem;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+}
+
+main:hover > .light {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+main > .box1 {
+  opacity: 0;
+  border: 1px solid black;
+  position: absolute;
+  background-color: yellow;
+  width: 20px;
+  height: 5px;
+  left: 39rem;
+  top: 19em;
+  border-radius: 0 0 0 0;
+  transform: rotate(120deg);
+}
+
+main:hover > .box1 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+main > div:nth-child(4) {
+  opacity: 0;
+  border: 1px solid black;
+  position: absolute;
+  background-color: yellow;
+  width: 20px;
+  height: 5px;
+  top: 19.2em;
+  left: 42rem;
+  border-radius: 0 0 0 0;
+  transform: rotate(90deg);
+}
+
+main:hover > .box2 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+main > div:nth-child(5) {
+  opacity: 0;
+  border: 1px solid black;
+  position: absolute;
+  background-color: yellow;
+  width: 20px;
+  height: 5px;
+  top: 30.4rem;
+  left: 45.2rem;
+  border-radius: 0 0 0 0;
+  transform: rotate(-120deg);
+}
+
+main:hover > .box3 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
