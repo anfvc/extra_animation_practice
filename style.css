@@ -9,7 +9,6 @@ font-size: 62.5%;
 }
 
 body {
-
   width: 100vw;
   height: 900px;
   font-size: 1.6rem;
@@ -19,7 +18,6 @@ body {
   background-color: #00c06b;
   cursor: pointer;
 }
-
 
 main {
   position: relative;
@@ -100,5 +98,22 @@ main:hover > .box3 {
   opacity: 1;
   transition: 0.5s;
 }
+
+main > div:nth-child(6) {
+  background-color: black;
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  border-radius: 40px;
+  opacity: 0;
+}
+
+main:hover > .night {
+  opacity: 1;
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0.471);
+}
+
+
 
 
